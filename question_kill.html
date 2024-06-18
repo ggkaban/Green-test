@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Вопрос 8</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: white;
+
+        }
+        #killimg {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Вы хотите убить себя?</h1>
+    
+    <form id="question-form">
+        <input type="radio" id="yes" name="kill" value="yes" required>
+        <label for="yes">Да</label><br><br>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <audio id="siren" src="Siren.wav"></audio>
+    <img src="ki.gif" id="killimg">
+    <script src="js/question_kill.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Вопрос 4</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="centered-text" id="greeting"></h1>
+    
+    <div class="form-container">
+        <form id="question-form">
+            <p>Вам нравятся убийства?</p>
+            <input type="radio" id="yes" name="murder" value="yes" required>
+            <label for="yes">Да</label><br>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <script src="js/question_good.js"></script>
+    <audio id="whisper" src="whisper.mp3"></audio>
+</body>
+</html>

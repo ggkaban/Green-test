@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Результат</title>
+    <style>
+        body {
+            background-color: #fff;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Спасибо за ваши ответы!</h1>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            const name = params.get('name');
+            const color = params.get('color');
+            const season = params.get('season');
+            const opinion = params.get('opinion');
+            const murder = params.get('murder');
+            
+            const resultElement = document.getElementById('result');
+            let resultText = '';
+            if (name) resultText += `Имя: ${name}<br>`;
+            if (color) resultText += `Любимый цвет: ${color}<br>`;
+            if (season) resultText += `Любимое время года: ${season}<br>`;
+            if (opinion) resultText += `Отношение к носилию: ${opinion}<br>`;
+            if (murder) resultText += `Отношение к убийствам: ${murder}<br>`;
+            resultElement.innerHTML = resultText;
+        });
+    </script>
+</body>
+</html>

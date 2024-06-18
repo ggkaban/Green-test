@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Вопрос 8</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: white;
+
+        }
+        #background-image {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Вам нравится видеть их страх?</h1>
+    
+    <form id="question-form">
+        <input type="radio" id="yes" name="fear" value="yes" required>
+        <label for="yes">Да</label><br><br>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <audio id="whisper" src="whisper.mp3"></audio>
+    <img src="background-image.gif" id="background-image">
+    <script src="js/question_fear.js"></script>
+</body>
+</html>
